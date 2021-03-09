@@ -24,21 +24,26 @@ let birthPlaceAnswer = prompt('True or False: I was born in Montana.').toLowerCa
         alert('Nice try, but no!');
     }
 
-let instrumentAnswer = prompt('True of False: I play a woodwind instrument').toLowerCase();
+let instrumentAnswer = prompt('True or False: I play a woodwind instrument').toLowerCase();
     if (instrumentAnswer === 'false') {
         alert('That is correct! I play brass!')
     } else {
         alert('Nope! There is no way I would play an oboe!')
     }
 
-let jobAnswer = prompt('True of False: I currently teach at the University of Idaho').toLowerCase();
+let jobAnswer = prompt('True or False: I currently teach at the University of Idaho').toLowerCase();
     if (jobAnswer === 'false') {
         alert('Correct, I taught there 2017-2019.') 
     } else {
         alert('Nope, but I did 2017-2019.')
     }
 
-
+let sportsAnswer = prompt('True or False: My favorite sport is basketball.').toLowerCase();
+    if (sportsAnswer === 'true') {
+        alert('Yes! My favorite team is the Portland Trail Blazers!')
+    } else {
+        alert('Nope! NBA all the way!')
+    }
 
 
 
