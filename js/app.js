@@ -31,7 +31,12 @@ let instrumentAnswer = prompt('True of False: I play a woodwind instrument').toL
         alert('Nope! There is no way I would play an oboe!')
     }
 
-
+let jobAnswer = prompt('True of False: I currently teach at the University of Idaho').toLowerCase();
+    if (jobAnswer === 'false') {
+        alert('Correct, I taught there 2017-2019.') 
+    } else {
+        alert('Nope, but I did 2017-2019.')
+    }
 
 
 
