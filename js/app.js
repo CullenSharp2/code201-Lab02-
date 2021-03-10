@@ -42,8 +42,8 @@ let sportsAnswer = prompt('True or False: My favorite sport is basketball.').toL
     }
 
 let userName = prompt('Please Enter your Name: ');
-    alert('Welcome ' + userName);
-    console.log(userName);
+    alert('Welcome to my page, ' + userName + '!');
+    // console.log(userName);
 
 
 
