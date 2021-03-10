@@ -1,4 +1,5 @@
 'use strict'
+
 let ageAnswer = prompt('What is my age?');
     // console.log(ageAnswer);    
     if (ageAnswer > 37) {
@@ -45,7 +46,22 @@ let userName = prompt('Please Enter your Name: ');
     alert('Welcome to my page, ' + userName + '!');
     // console.log(userName);
 
-
+let useranswer = prompt('What is my favorite color? Green, blue, or yellow?');
+switch (useranswer.toLowerCase()) {
+        
+    case ('green'):
+        alert('Correct');
+         break;
+    case ('blue'):
+        alert('No');
+        break;
+    case ('yellow'):
+        alert('No');
+        break;
+    default:
+        alert("Try again!")
+        console.low(useranswer)
+    }
 
 // let age = 17;
 
