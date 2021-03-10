@@ -47,23 +47,22 @@ let userName = prompt('Please Enter your Name: ');
 // console.log(userName);
 
 
-// let correctAnswer = Math.floor(Math.random() * 10) + 1;
-//     console.log(correctAnswer);
-// let guesses = 4;
+let correctAnswer = 6;
+let guesses = 4;
     
-// for(let i = 0; i < guesses; i++) {
-//     let userAnswer = prompt('Please Enter a number 1-50');
-//     while(userAnswer < 1 || userAnswer > 100){
-//           userAnswer = prompt('Outside of Range. Please Enter a number 1-100')
-//      }
-//     if(userAnswer == correctAnswer){
-//          alert('Congratulations!');
-//          break;
-//     } else if (userAnswer > correctAnswer) {
-//         alert('Too high! Try Again!')
-//     } else if(userAnswer < correctAnswer) {
-//             alert('Too low! Try Again!')
-//     }
+for(let i = 0; i < guesses; i++) {
+    let userAnswer = prompt('Please Enter a number 1-50');
+    while(userAnswer < 1 || userAnswer > 100){
+          userAnswer = prompt('Outside of Range. Please Enter a number 1-100')
+     }
+    if(userAnswer == correctAnswer){
+         alert('Congratulations!');
+         break;
+    } else if (userAnswer > correctAnswer) {
+        alert('Too high! Try Again!')
+    } else if(userAnswer < correctAnswer) {
+            alert('Too low! Try Again!')
+    }
 
 
 
