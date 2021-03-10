@@ -1,71 +1,82 @@
 'use strict'
 
-// let ageAnswer = prompt('What is my age?');
-//     // console.log(ageAnswer);    
-//     if (ageAnswer > 37) {
-//        alert('Too High');
-//     } else if (ageAnswer < 37) {
-//        alert('Too Low');
-//     } else {
-//        alert('Correct');
-// }
+let ageAnswer = prompt('What is my age?');
+    // console.log(ageAnswer);    
+    if (ageAnswer > 37) {
+       alert('Too High');
+    } else if (ageAnswer < 37) {
+       alert('Too Low');
+    } else {
+       alert('Correct');
+}
 
-// let birthPlaceAnswer = prompt('True or False: I was born in Montana.').toLowerCase();
-//     // console.log(birthPlaceAnswer);
-//     if (birthPlaceAnswer === 'true') {
-//         alert('Yep!');
-//     } else { 
-//         alert('Nice try, but no!');
-//     }
+let birthPlaceAnswer = prompt('True or False: I was born in Montana.').toLowerCase();
+    // console.log(birthPlaceAnswer);
+    if (birthPlaceAnswer === 'true') {
+        alert('Yep!');
+    } else { 
+        alert('Nice try, but no!');
+    }
 
-// let instrumentAnswer = prompt('True or False: I play a woodwind instrument').toLowerCase();
-//     // console.log(instrumentAnswer);
-//     if (instrumentAnswer === 'false') {
-//         alert('That is correct! I play brass!')
-//     } else {
-//         alert('Nope! There is no way I would play an oboe!')
-//     }
+let instrumentAnswer = prompt('True or False: I play a woodwind instrument').toLowerCase();
+    // console.log(instrumentAnswer);
+    if (instrumentAnswer === 'false') {
+        alert('That is correct! I play brass!')
+    } else {
+        alert('Nope! There is no way I would play an oboe!')
+    }
 
-// let jobAnswer = prompt('True or False: I currently teach at the University of Idaho').toLowerCase();
-//     // console.log(jobAnswer);
-//     if (jobAnswer === 'false') {
-//         alert('Correct, I taught there 2017-2019.') 
-//     } else {
-//         alert('Nope, but I did 2017-2019.')
-//     }
+let jobAnswer = prompt('True or False: I currently teach at the University of Idaho').toLowerCase();
+    // console.log(jobAnswer);
+    if (jobAnswer === 'false') {
+        alert('Correct, I taught there 2017-2019.') 
+    } else {
+        alert('Nope, but I did 2017-2019.')
+    }
 
-// let sportsAnswer = prompt('True or False: My favorite sport is basketball.').toLowerCase();
-//     // console.log(sportsAnswer);
-//     if (sportsAnswer === 'true') {
-//         alert('Yes! My favorite team is the Portland Trail Blazers!')
-//     } else {
-//         alert('Nope! NBA all the way!')
-//     }
+let sportsAnswer = prompt('True or False: My favorite sport is basketball.').toLowerCase();
+    // console.log(sportsAnswer);
+    if (sportsAnswer === 'true') {
+        alert('Yes! My favorite team is the Portland Trail Blazers!')
+    } else {
+        alert('Nope! NBA all the way!')
+    }
 
-// let userName = prompt('Please Enter your Name: '); {
-//     alert('Welcome to my page, ' + userName + '!');
-// // console.log(userName);
-// }
-
+let userName = prompt('Please Enter your Name: '); {
+    alert('Welcome to my page, ' + userName + '!');
+// console.log(userName);
+}
 
 let correctAnswer = 6;
 let guesses = 4;
-    
-for(let i = 0; i < guesses; i++) {
-    let userAnswer = prompt('Please Enter a number 1-50');
-    while(userAnswer < 1 || userAnswer > 100){
-          userAnswer = prompt('Outside of Range. Please Enter a number 1-100')
-     }
-    if(userAnswer == correctAnswer){
-         alert('Congratulations!');
-         break;
-    } else if (userAnswer > correctAnswer) {
-        alert('Too high! Try Again!')
-    } else if(userAnswer < correctAnswer) {
-            alert('Too low! Try Again!')
-    }
 
+for(let i = 0; i < guesses; i++) { 
+    let answer = prompt('Please Enter a number 1-10');
+     if(answer == correctAnswer){
+        alert('Congratulation!');
+        break;
+    } else if (answer > correctAnswer) {
+         alert('Too high! Try Again!');
+    } else if (answer < correctAnswer) {
+        alert('Too low! Try Again!');
+    } 
+}
+    alert('The answer is 6!');
 
+let poss = [3,9,4,6,4,2]; 
+console.log(poss);
+let contains9 = true;
+for (let i = 0; i < poss.length; i+=1) {
+    let currentPoss = poss[i];
+    if(currentPoss === 0) {
+    contains9 = true;
+    break;
+    }    
+}
+
+// while(answer < 1 || answer > 100){
+    //      answer = prompt('Outside of Range. Please Enter a number 1-10')
+    // }
 
 
 
