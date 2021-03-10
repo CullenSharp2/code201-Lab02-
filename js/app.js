@@ -1,14 +1,6 @@
-// 3 data types
-// let a = 'some text';
-// let b = 4;
-// let c = true;
-// let d = [1,4,2,'some text',4,true,5,false];
-// // above line 5 is an example of an array
-// console.log(typeof(b));
-
-// conditionals
-
-let ageAnswer = prompt('What is my age?');    
+'use strict'
+let ageAnswer = prompt('What is my age?');
+    // console.log(ageAnswer);    
     if (ageAnswer > 37) {
        alert('Too High');
     } else if (ageAnswer < 37) {
@@ -18,6 +10,7 @@ let ageAnswer = prompt('What is my age?');
 }
 
 let birthPlaceAnswer = prompt('True or False: I was born in Montana.').toLowerCase();
+    // console.log(birthPlaceAnswer);
     if (birthPlaceAnswer === 'true') {
         alert('Yep!');
     } else { 
@@ -25,6 +18,7 @@ let birthPlaceAnswer = prompt('True or False: I was born in Montana.').toLowerCa
     }
 
 let instrumentAnswer = prompt('True or False: I play a woodwind instrument').toLowerCase();
+    // console.log(instrumentAnswer);
     if (instrumentAnswer === 'false') {
         alert('That is correct! I play brass!')
     } else {
@@ -32,6 +26,7 @@ let instrumentAnswer = prompt('True or False: I play a woodwind instrument').toL
     }
 
 let jobAnswer = prompt('True or False: I currently teach at the University of Idaho').toLowerCase();
+    // console.log(jobAnswer);
     if (jobAnswer === 'false') {
         alert('Correct, I taught there 2017-2019.') 
     } else {
@@ -39,12 +34,16 @@ let jobAnswer = prompt('True or False: I currently teach at the University of Id
     }
 
 let sportsAnswer = prompt('True or False: My favorite sport is basketball.').toLowerCase();
+    // console.log(sportsAnswer);
     if (sportsAnswer === 'true') {
         alert('Yes! My favorite team is the Portland Trail Blazers!')
     } else {
         alert('Nope! NBA all the way!')
     }
 
+let userName = prompt('Please Enter your Name: ');
+    alert('Welcome ' + userName);
+    console.log(userName);
 
 
 
@@ -75,6 +74,16 @@ let sportsAnswer = prompt('True or False: My favorite sport is basketball.').toL
 //   alert('too young or old enough');
 //   break;
 // }
+
+// 3 data types
+// let a = 'some text';
+// let b = 4;
+// let c = true;
+// let d = [1,4,2,'some text',4,true,5,false];
+// // above line 5 is an example of an array
+// console.log(typeof(b));
+
+// conditionals
 
 // alert('mixED Case TEXT'.toLowerCase());
 // alert('mixED Case TEXT'.toUpperCase());
