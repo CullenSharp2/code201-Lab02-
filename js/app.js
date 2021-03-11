@@ -94,26 +94,27 @@ function numberGame1(correctAnswer, guesses) {
 
 numberGame1(6, 4);
 
-let possibleAnswers = [34, 9, 14, 26, 43, 2];
-let guess = 0;
-let maxGuess = 6;
-let isCorrectAnswer = false;
-let userAnswer = parseInt(prompt('Guess a number in my array 1-50!'));
-while (guess < maxGuess) {
-  for (let i = 0; i < possibleAnswers.length; i += 1) {
-    if (possibleAnswers[i] === userAnswer) {
-      isCorrectAnswer = true;
-      alert('Congrats! You got it right!');
-      totalCorrectAnswers += 1;
-      break;
+function numberGameArray(possibleAnswers, guess, maxGuess, isCorrectAnswer) {
+    let userAnswer = parseInt(prompt('Guess a number in my array 1-50!'));
+
+    while (guess < maxGuess) {
+    for (let i = 0; i < possibleAnswers.length; i += 1) {
+        if (possibleAnswers[i] === userAnswer) {
+        isCorrectAnswer = true;
+        alert('Congrats! You got it right!');
+        totalCorrectAnswers += 1;
+        break;
+        }
     }
-  }
-  guess += 1;
-  if (isCorrectAnswer === true) {
-    break;
-  }
-  userAnswer = prompt('Guess again! Guess a number in my array 1-50!');
+    guess += 1;
+    if (isCorrectAnswer === true) {
+        break;
+    }
+    userAnswer = prompt('Guess again! Guess a number in my array 1-50!');
+    }
+    alert('The answers were 34, 9, 14, 26, 43, and 2.');
 }
-alert('The answers were 34, 9, 14, 26, 43, and 2.');
+
+numberGameArray([34, 9, 14, 26, 43, 2], 0, 6, false);
 
 alert('Okay, you got ' + totalCorrectAnswers + ' correct out of 7!');
