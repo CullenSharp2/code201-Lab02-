@@ -10,8 +10,8 @@ function getName(){
 getName();
 
 function guessAge() {
-
   let ageAnswer = prompt('What is my age?');
+
   if (ageAnswer > 37) {
     alert('Too High');
   } else if (ageAnswer < 37) {
@@ -24,13 +24,17 @@ function guessAge() {
 
 guessAge();
 
-let birthPlaceAnswer = prompt('True or False: I was born in Montana.').toLowerCase();
-if (birthPlaceAnswer === 'true') {
-  alert('Yep!');
-  totalCorrectAnswers += 1;
-} else {
-  alert('Nice try, but no!');
+function guessBirthplace() {
+    let birthPlaceAnswer = prompt('True or False: I was born in Montana.').toLowerCase();
+    if (birthPlaceAnswer === 'true') {
+    alert('Yep!');
+    totalCorrectAnswers += 1;
+    } else {
+    alert('Nice try, but no!');
+    }
 }
+
+guessBirthplace();
 
 let instrumentAnswer = prompt('True or False: I play a woodwind instrument').toLowerCase();
 if (instrumentAnswer === 'false') {
