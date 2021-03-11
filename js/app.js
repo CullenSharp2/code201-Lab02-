@@ -1,5 +1,7 @@
 'use strict';
 
+let totalCorrectAnswers = 0;
+
 function getName(){
   let userName = prompt('Please Enter your Name: ');
   alert('Welcome to my page, ' + userName + '!');
@@ -8,17 +10,16 @@ function getName(){
 getName();
 
 function guessAge() {
-    let totalCorrectAnswers = 0;
 
-    let ageAnswer = prompt('What is my age?');
-    if (ageAnswer > 37) {
+  let ageAnswer = prompt('What is my age?');
+  if (ageAnswer > 37) {
     alert('Too High');
-    } else if (ageAnswer < 37) {
+  } else if (ageAnswer < 37) {
     alert('Too Low');
-    } else {
+  } else {
     alert('Correct!');
     totalCorrectAnswers += 1;
-    }
+  }
 }
 
 guessAge();
