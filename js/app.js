@@ -110,7 +110,7 @@ function numberGameArray(possibleAnswers, guess, maxGuess, isCorrectAnswer) {
     if (isCorrectAnswer === true) {
       break;
     }
-    userAnswer = prompt('Guess again! Guess a number in my array 1-50!');
+    userAnswer = parseInt(prompt('Guess again! Guess a number in my array 1-50!'));
   }
   alert('The answers were '+possibleAnswers+'.');
 }
