@@ -63,13 +63,18 @@ function guessJob {
 
 guessJob();
 
-let sportsAnswer = prompt('True or False: My favorite sport is basketball.').toLowerCase();
-if (sportsAnswer === 'true') {
-  alert('Yes! My favorite team is the Portland Trail Blazers!');
-  totalCorrectAnswers += 1;
-} else {
-  alert('Nope! NBA all the way!');
+function guessSports() {
+    let sportsAnswer = prompt('True or False: My favorite sport is basketball.').toLowerCase();
+
+    if (sportsAnswer === 'true') {
+    alert('Yes! My favorite team is the Portland Trail Blazers!');
+    totalCorrectAnswers += 1;
+    } else {
+    alert('Nope! NBA all the way!');
+    }
 }
+
+guessSports();
 
 let correctAnswer = 6;
 let guesses = 4;
