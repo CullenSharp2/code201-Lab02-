@@ -26,6 +26,7 @@ guessAge();
 
 function guessBirthplace() {
     let birthPlaceAnswer = prompt('True or False: I was born in Montana.').toLowerCase();
+
     if (birthPlaceAnswer === 'true') {
     alert('Yep!');
     totalCorrectAnswers += 1;
@@ -36,13 +37,18 @@ function guessBirthplace() {
 
 guessBirthplace();
 
-let instrumentAnswer = prompt('True or False: I play a woodwind instrument').toLowerCase();
-if (instrumentAnswer === 'false') {
-  alert('That is correct! I play brass!');
-  totalCorrectAnswers += 1;
-} else {
-  alert('Nope! There is no way I would play an oboe!');
+function guessInstrument() {
+    let instrumentAnswer = prompt('True or False: I play a woodwind instrument').toLowerCase();
+
+    if (instrumentAnswer === 'false') {
+    alert('That is correct! I play brass!');
+    totalCorrectAnswers += 1;
+    } else {
+    alert('Nope! There is no way I would play an oboe!');
+    }
 }
+
+guessInstrument();
 
 let jobAnswer = prompt('True or False: I currently teach at the University of Idaho').toLowerCase();
 if (jobAnswer === 'false') {
