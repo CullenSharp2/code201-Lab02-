@@ -50,13 +50,18 @@ function guessInstrument() {
 
 guessInstrument();
 
-let jobAnswer = prompt('True or False: I currently teach at the University of Idaho').toLowerCase();
-if (jobAnswer === 'false') {
-  alert('Correct, I taught there 2017-2019.');
-  totalCorrectAnswers += 1;
-} else {
-  alert('Nope, but I did 2017-2019.');
+function guessJob {
+    let jobAnswer = prompt('True or False: I currently teach at the University of Idaho').toLowerCase();
+
+    if (jobAnswer === 'false') {
+    alert('Correct, I taught there 2017-2019.');
+    totalCorrectAnswers += 1;
+    } else {
+    alert('Nope, but I did 2017-2019.');
+    }
 }
+
+guessJob();
 
 let sportsAnswer = prompt('True or False: My favorite sport is basketball.').toLowerCase();
 if (sportsAnswer === 'true') {
