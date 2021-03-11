@@ -76,22 +76,23 @@ function guessSports() {
 
 guessSports();
 
-let correctAnswer = 6;
-let guesses = 4;
-
-for (let i = 0; i < guesses; i++) {
-  let answer = parseInt(prompt('Please Enter a number 1-10'));
-  if (answer === correctAnswer) {
-    alert('Congratulation!');
-    totalCorrectAnswers += 1;
-    break;
-  } else if (answer > correctAnswer) {
-    alert('Too high! Try Again!');
-  } else if (answer < correctAnswer) {
-    alert('Too low! Try Again!');
-  }
+function numberGame1(correctAnswer, guesses) {
+    for (let i = 0; i < guesses; i++) {
+        let answer = parseInt(prompt('Please Enter a number 1-10'));
+        if (answer === correctAnswer) {
+            alert('Congratulation!');
+            totalCorrectAnswers += 1;
+            break;
+        } else if (answer > correctAnswer) {
+            alert('Too high! Try Again!');
+        } else if (answer < correctAnswer) {
+            alert('Too low! Try Again!');
+        }
+    }
+    alert('The answer is 6!');
 }
-alert('The answer is 6!');
+
+numberGame1(6, 4);
 
 let possibleAnswers = [34, 9, 14, 26, 43, 2];
 let guess = 0;
