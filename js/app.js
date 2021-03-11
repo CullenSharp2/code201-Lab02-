@@ -63,16 +63,34 @@ for(let i = 0; i < guesses; i++) {
 }
     alert('The answer is 6!');
 
-let poss = [3,9,4,6,4,2]; 
-console.log(poss);
-let contains9 = true;
-for (let i = 0; i < poss.length; i+=1) {
-    let currentPoss = poss[i];
-    if(currentPoss === 0) {
-    contains9 = true;
-    break;
-    }    
+let possibleAnswers = [34,9,14,26,43,2]; 
+console.log(possibleAnswers);
+let guess = 0;
+let maxGuess = 6;
+let isCorrectAnswer = false;
+let userAnswer = prompt('Guess a number in my array 1-50!');
+while (guess < maxGuess) {
+    for (let i = 0; i < possibleAnswers.length; i+=1) {
+        console.log(userAnswer);
+        console.log(possibleAnswers[i]);
+        if(possibleAnswers[i] == userAnswer) {
+            isCorrectAnswer = true;
+            alert('Congrats! You got it right!');
+            break;
+        }
+    }
+    guess +=1;
+    if(isCorrectAnswer === true){
+        break;
+    }
+    userAnswer = prompt('Guess again! Guess a number in my array 1-50!');
+    guess >= maxGuess; 
+        alert('Sorry, all out of guesses! The answers were 34, 9, 14, 26, 43, and 2.')
+        break;
 }
+    
+  
+
 
 // while(answer < 1 || answer > 100){
     //      answer = prompt('Outside of Range. Please Enter a number 1-10')
