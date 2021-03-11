@@ -1,20 +1,27 @@
 'use strict';
 
-let userName = prompt('Please Enter your Name: '); {
+function getName(){
+  let userName = prompt('Please Enter your Name: ');
   alert('Welcome to my page, ' + userName + '!');
 }
 
-let totalCorrectAnswers = 0;
+getName();
 
-let ageAnswer = prompt('What is my age?');
-if (ageAnswer > 37) {
-  alert('Too High');
-} else if (ageAnswer < 37) {
-  alert('Too Low');
-} else {
-  alert('Correct!');
-  totalCorrectAnswers += 1;
+function guessAge() {
+    let totalCorrectAnswers = 0;
+
+    let ageAnswer = prompt('What is my age?');
+    if (ageAnswer > 37) {
+    alert('Too High');
+    } else if (ageAnswer < 37) {
+    alert('Too Low');
+    } else {
+    alert('Correct!');
+    totalCorrectAnswers += 1;
+    }
 }
+
+guessAge();
 
 let birthPlaceAnswer = prompt('True or False: I was born in Montana.').toLowerCase();
 if (birthPlaceAnswer === 'true') {
