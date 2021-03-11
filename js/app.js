@@ -85,9 +85,8 @@ while (guess < maxGuess) {
     }
     userAnswer = prompt('Guess again! Guess a number in my array 1-50!');
     guess >= maxGuess; 
-        alert('Sorry, all out of guesses! The answers were 34, 9, 14, 26, 43, and 2.')
-        break;
 }
+    alert('The answers were 34, 9, 14, 26, 43, and 2.')
     
   
 
