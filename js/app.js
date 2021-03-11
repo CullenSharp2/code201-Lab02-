@@ -112,7 +112,7 @@ function numberGameArray(possibleAnswers, guess, maxGuess, isCorrectAnswer) {
     }
     userAnswer = prompt('Guess again! Guess a number in my array 1-50!');
   }
-  alert('The answers were 34, 9, 14, 26, 43, and 2.');
+  alert('The answers were '+possibleAnswers+'.');
 }
 
 numberGameArray([34, 9, 14, 26, 43, 2], 0, 6, false);
