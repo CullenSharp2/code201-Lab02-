@@ -2,13 +2,11 @@
 
 let userName = prompt('Please Enter your Name: '); {
   alert('Welcome to my page, ' + userName + '!');
-  // console.log(userName);
 }
 
 let totalCorrectAnswers = 0;
 
 let ageAnswer = prompt('What is my age?');
-// console.log(ageAnswer);
 if (ageAnswer > 37) {
   alert('Too High');
 } else if (ageAnswer < 37) {
@@ -19,7 +17,6 @@ if (ageAnswer > 37) {
 }
 
 let birthPlaceAnswer = prompt('True or False: I was born in Montana.').toLowerCase();
-// console.log(birthPlaceAnswer);
 if (birthPlaceAnswer === 'true') {
   alert('Yep!');
   totalCorrectAnswers += 1;
@@ -28,7 +25,6 @@ if (birthPlaceAnswer === 'true') {
 }
 
 let instrumentAnswer = prompt('True or False: I play a woodwind instrument').toLowerCase();
-// console.log(instrumentAnswer);
 if (instrumentAnswer === 'false') {
   alert('That is correct! I play brass!');
   totalCorrectAnswers += 1;
@@ -37,7 +33,6 @@ if (instrumentAnswer === 'false') {
 }
 
 let jobAnswer = prompt('True or False: I currently teach at the University of Idaho').toLowerCase();
-// console.log(jobAnswer);
 if (jobAnswer === 'false') {
   alert('Correct, I taught there 2017-2019.');
   totalCorrectAnswers += 1;
@@ -46,7 +41,6 @@ if (jobAnswer === 'false') {
 }
 
 let sportsAnswer = prompt('True or False: My favorite sport is basketball.').toLowerCase();
-// console.log(sportsAnswer);
 if (sportsAnswer === 'true') {
   alert('Yes! My favorite team is the Portland Trail Blazers!');
   totalCorrectAnswers += 1;
@@ -72,15 +66,12 @@ for (let i = 0; i < guesses; i++) {
 alert('The answer is 6!');
 
 let possibleAnswers = [34, 9, 14, 26, 43, 2];
-console.log(possibleAnswers);
 let guess = 0;
 let maxGuess = 6;
 let isCorrectAnswer = false;
 let userAnswer = parseInt(prompt('Guess a number in my array 1-50!'));
 while (guess < maxGuess) {
   for (let i = 0; i < possibleAnswers.length; i += 1) {
-    console.log(userAnswer);
-    // console.log(possibleAnswers[i]);
     if (possibleAnswers[i] === userAnswer) {
       isCorrectAnswer = true;
       alert('Congrats! You got it right!');
