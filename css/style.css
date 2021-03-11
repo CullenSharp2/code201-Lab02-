@@ -18,6 +18,8 @@ p {
     color: darkslateblue;
     margin-right: 40px;
     margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 h2 {
@@ -51,10 +53,12 @@ body {
 ol {
     list-style: decimal;
     margin-left: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-ul {
+ul, dl {
     list-style: inside;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 div {
