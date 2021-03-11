@@ -58,7 +58,7 @@ let correctAnswer = 6;
 let guesses = 4;
 
 for (let i = 0; i < guesses; i++) {
-  let answer = prompt('Please Enter a number 1-10');
+  let answer = parseInt(prompt('Please Enter a number 1-10'));
   if (answer === correctAnswer) {
     alert('Congratulation!');
     totalCorrectAnswers += 1;
@@ -76,7 +76,7 @@ console.log(possibleAnswers);
 let guess = 0;
 let maxGuess = 6;
 let isCorrectAnswer = false;
-let userAnswer = prompt('Guess a number in my array 1-50!');
+let userAnswer = parseInt(prompt('Guess a number in my array 1-50!'));
 while (guess < maxGuess) {
   for (let i = 0; i < possibleAnswers.length; i += 1) {
     console.log(userAnswer);
